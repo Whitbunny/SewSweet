@@ -1,0 +1,138 @@
+/* App.css */
+
+/* General App Layout */
+.app {
+  font-family: Stencil Std, fantasy;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f0f0f0; /* Light background for the app */
+  padding: 20px;
+}
+
+h1 {
+  color: #333;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+header {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+/* Main Content Layout */
+.main-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 20px;
+  width: 100%;
+  max-width: 1200px;
+}
+
+/* Canvas Section */
+.canvas-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1; /* To make it flexible */
+  border: 2px dashed #ccc; /* Optional: dashed border around canvas area */
+  padding: 20px;
+  background-color: #fff;
+}
+
+/* Sidebar Styling */
+.sidebar {
+  width: 200px;
+  padding: 10px;
+  background-color: #f4f4f4;
+  margin-right: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Slight shadow for depth */
+}
+
+.sidebar h2 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+}
+
+/* Pattern Preview Section */
+.pattern-preview {
+  margin-top: 20px;
+  text-align: center;
+  background-color: #f7f7f7;
+  padding: 15px;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 400px;
+}
+
+/* Export Buttons Section */
+.export-buttons {
+  margin-top: 20px;
+  text-align: center;
+}
+
+/* Upload Pattern Section */
+.upload-pattern {
+  margin-top: 20px;
+  text-align: center;
+  background-color: #f4f4f4;
+  padding: 15px;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 400px;
+}
+
+/* Responsive Layout */
+@media (max-width: 768px) {
+  .main-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .sidebar {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .canvas-section {
+    width: 100%;
+    max-width: 800px;
+  }
+
+  .pattern-preview,
+  .upload-pattern {
+    width: 100%;
+    max-width: 100%;
+    margin-top: 10px;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+}
+
+/* Mobile-First Responsive */
+@media (max-width: 480px) {
+  .app {
+    padding: 10px;
+  }
+
+  .canvas-section {
+    padding: 10px;
+  }
+
+  .sidebar {
+    padding: 15px;
+    font-size: 14px;
+  }
+
+  .export-buttons {
+    font-size: 14px;
+  }
+}

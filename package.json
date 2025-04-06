@@ -1,0 +1,10 @@
+{
+  "dependencies": {
+    "fabric": "^6.6.2",
+    "firebase": "^11.6.0"
+  },
+  "devDependencies": {
+    "@types/fabric": "^5.3.10",
+    "@types/firebase": "^2.4.32"
+  }
+}
